@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Othello</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="othello.css">
+</head>
+
+<body>
+    <div class="board">
+      <table class="board-cells" id="squares-group" bordercolor="#000">
+        <tbody>
+          <tr>
+            <td class="cell"><img id="r1c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r1c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r2c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r2c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r3c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r3c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r4c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r4c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r4c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r4c4" onclick="placeToken(this.id)" src="/images/blackToken.png"></td>
+            <td class="cell"><img id="r4c5" onclick="placeToken(this.id)" src="/images/whiteToken.png"></td>
+            <td class="cell"><img id="r4c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r4c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r4c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r5c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r5c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r5c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r5c4" onclick="placeToken(this.id)" src="/images/whiteToken.png"></td>
+            <td class="cell"><img id="r5c5" onclick="placeToken(this.id)" src="/images/blackToken.png"></td>
+            <td class="cell"><img id="r5c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r5c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r5c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r6c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r6c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r7c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r7c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+          <tr>
+            <td class="cell"><img id="r8c1" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c2" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c3" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c4" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c5" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c6" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c7" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+            <td class="cell"><img id="r8c8" onclick="placeToken(this.id)" src="/images/emptySquare.png"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="othello.js"></script>
+  </body>
+</html>
