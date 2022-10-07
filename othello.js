@@ -9,7 +9,8 @@ function placeToken(id)
     console.log("Row: " + row);
     console.log("Col: " + col);
 
-    var clickedSquare = document.getElementById(id);
+    //var clickedSquare = document.getElementById(id);
+    var clickedSquare = document.getElementById("r" + row + "c" + (col - 1));
     var pathEnd = clickedSquare.src.split("/").pop();
     var clickedPath = "/images/" + pathEnd;
     var whitesTurn = false;
@@ -40,6 +41,10 @@ function placeToken(id)
 //     {
 //     //looking left
 //     if (clickedPath == "/images/blackToken.png") && 
+// document.getElementById("r" + row + "c" + (col - 1)).src.contains("white") )
+//     {
+//     alert("Eureka!");
+//     }
     
 //     if (Board.board[row][col].equals("X") && Board.board[row][col - 1].equals("O"))
 //     {
